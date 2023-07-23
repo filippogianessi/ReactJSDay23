@@ -1,0 +1,55 @@
+:root {
+  --bg-btn-primary: var(--blue-50);
+  --bg-btn-primary-hover: var(--blue-60);
+  --text-btn-primary: var(--text-invert);
+  --font-size-btn: var(--font-size-body);
+  --font-size-btn-big: var(--font-size-body-fat);
+  --line-height-btn-big: var(--font-size-body);
+  --line-height-btn: var(--font-size-caption);
+  --bg-btn-secondary: var(--neutral-30);
+  --text-btn-secondary: var(--text-invert);
+  --vspacing-btn: var(--size-s);
+  --hspacing-btn: var(--size-m);
+  --vspacing-btn-small: var(--size-xs);
+  --hspacing-btn-small: var(--size-s);
+  --vspacing-btn-big: var(--size-m);
+  --hspacing-btn-big: var(--size-l);
+  --radius-btn: var(--radius-default);
+  --outline-btn: none;
+}
+
+button, .button {
+  background-color: var(--bg-btn-primary);
+  color: var(--text-invert);
+  padding: var(--vspacing-btn) var(--hspacing-btn);
+  border-radius: var(--radius-btn);
+  border: var(--outline-btn);
+  cursor: pointer;
+  font-size: var(--font-size-btn);
+  line-height: var(--line-height-btn);
+
+}
+
+.button:hover {
+  background-color: var(--bg-btn-primary-hover);
+}
+
+.button.secondary {
+  background-color: var(--bg-btn-secondary);
+  color: var(--text-invert);
+}
+
+.button.tertiary {
+  background-color: var(--bg-btn-secondary);
+  color: var(--text-invert);
+}
+
+.button.small {
+  padding: var(--vspacing-btn-small) var(--hspacing-btn-small);
+}
+
+.button.big {
+  padding: var(--vspacing-btn-big) var(--hspacing-btn-big);
+  font-size: var(--font-size-btn-big);
+
+}
