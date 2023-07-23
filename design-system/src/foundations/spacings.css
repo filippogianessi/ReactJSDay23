@@ -1,0 +1,8 @@
+:root {
+  --inner-spacing-small: var(--size-xxxs);
+  --inner-spacing-medium: var(--size-xs);
+  --inner-spacing-large: var(--size-m);
+  --layout-spacing-small: var(--size-m);
+  --layout-spacing-medium: var(--size-l);
+  --layout-spacing-large: var(--size-xl);
+}

@@ -1,17 +1,17 @@
 :root {
   --text-default: var(--neutral-30);
   --text-invert: var(--neutral-0);
-  --font-size-caption: var(--size-xs);
-  --font-size-body: var(--size-s);
-  --font-size-body-fat: var(--size-l);
+  --font-size-caption: var(--size-xxs);
+  --font-size-body: var(--size-xs);
+  --font-size-body-fat: var(--size-s);
   --font-size-h5: var(--size-s);
   --font-size-h4: var(--size-m);
   --font-size-h3: var(--size-l);
   --font-size-h2: var(--size-xl);
   --font-size-h1: var(--size-xxl);
   --font-size-title: var(--size-xxxl);
-  --line-height-caption: var(--size-s);
-  --line-height-body: var(--size-m);
+  --line-height-caption: var(--size-xs);
+  --line-height-body: var(--size-s);
   --line-height-body-fat: var(--size-l);
   --line-height-h5: var(--size-m);
   --line-height-h4: var(--size-l);
@@ -19,9 +19,9 @@
   --line-height-h2: var(--size-xxl);
   --line-height-h1: var(--size-xxxl);
   --line-height-title: var(--size-xxxl);
-  --font-weight-heading: bold;
-  --font-weight-body: regular;
-  --font-weight-actions: semi-bold;
+  --font-weight-heading: 700;
+  --font-weight-body: 400;
+  --font-weight-actions: 600;
 }
 
 p, body {
@@ -39,5 +39,29 @@ p, body {
 h1 {
   font-size: var(--font-size-h1);
   line-height: var(--line-height-h1);
+  font-weight: var(--font-weight-heading);
+}
+
+h2 {
+  font-size: var(--font-size-h2);
+  line-height: var(--line-height-h2);
+  font-weight: var(--font-weight-heading);
+}
+
+h3 {
+  font-size: var(--font-size-h3);
+  line-height: var(--line-height-h3);
+  font-weight: var(--font-weight-heading);
+}
+
+h4 {
+  font-size: var(--font-size-h4);
+  line-height: var(--line-height-h4);
+  font-weight: var(--font-weight-heading);
+}
+
+h5 {
+  font-size: var(--font-size-h5);
+  line-height: var(--line-height-h5);
   font-weight: var(--font-weight-heading);
 }

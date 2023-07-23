@@ -18,8 +18,16 @@ code {
   grid-gap: var(--size-m);
   justify-items: start;
 }
+.container--typography {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: var(--size-m);
+  justify-items: start;
+}
 
 .wrapper {
-  display: grid;
-  padding: 0 10vw;
+  padding: var(--size-xxl) 10vw;
+  display: flex;
+  flex-direction: column;
+  grid-gap: var(--size-l);
 }

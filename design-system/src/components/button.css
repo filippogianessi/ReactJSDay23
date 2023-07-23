@@ -2,32 +2,39 @@
   --bg-btn-primary: var(--blue-50);
   --bg-btn-primary-hover: var(--blue-60);
   --text-btn-primary: var(--text-invert);
-  --font-size-btn: var(--font-size-body);
-  --font-size-btn-big: var(--font-size-body-fat);
-  --line-height-btn-big: var(--font-size-body);
-  --line-height-btn: var(--font-size-caption);
   --bg-btn-secondary: var(--neutral-30);
+  --bg-btn-secondary-hover: var(--neutral-40);
   --text-btn-secondary: var(--text-invert);
-  --vspacing-btn: var(--size-s);
+  --bg-btn-tertiary: none;
+  --bg-btn-tertiary-hover: var(--neutral-40);
+  --text-btn-tertiary: var(--text-default);
+  --text-btn-tertiary-hover: var(--text-invert);
+  --outline-btn-tertiary: 1px solid var(--neutral-40);
+  --vspacing-btn: var(--size-xs);
   --hspacing-btn: var(--size-m);
-  --vspacing-btn-small: var(--size-xs);
-  --hspacing-btn-small: var(--size-s);
+  --vspacing-btn-small: var(--size-xxxs);
+  --hspacing-btn-small: var(--size-xxs);
   --vspacing-btn-big: var(--size-m);
   --hspacing-btn-big: var(--size-l);
   --radius-btn: var(--radius-default);
   --outline-btn: none;
+  --font-size-btn: var(--font-size-body);
+  --font-size-btn-big: var(--font-size-body-fat);
+  --line-height-btn-big: var(--font-size-body);
+  --line-height-btn: var(--font-size-caption);
+  --font-weight-btn: var(--font-weight-actions);
 }
 
 button, .button {
   background-color: var(--bg-btn-primary);
-  color: var(--text-invert);
+  color: var(--text-btn-primary);
   padding: var(--vspacing-btn) var(--hspacing-btn);
   border-radius: var(--radius-btn);
   border: var(--outline-btn);
   cursor: pointer;
   font-size: var(--font-size-btn);
   line-height: var(--line-height-btn);
-
+  font-weight: var(--font-weight-btn);
 }
 
 .button:hover {
@@ -36,12 +43,22 @@ button, .button {
 
 .button.secondary {
   background-color: var(--bg-btn-secondary);
-  color: var(--text-invert);
+  color: var(--text-btn-secondary);
+}
+
+.button.secondary:hover {
+  background-color: var(--bg-btn-secondary-hover);
 }
 
 .button.tertiary {
-  background-color: var(--bg-btn-secondary);
-  color: var(--text-invert);
+  background-color: var(--bg-btn-tertiary);
+  color: var(--text-btn-tertiary);
+  border: var(--outline-btn-tertiary);
+}
+
+.button.tertiary:hover {
+  background-color: var(--bg-btn-tertiary-hover);
+  color: var(--text-btn-tertiary-hover);
 }
 
 .button.small {
